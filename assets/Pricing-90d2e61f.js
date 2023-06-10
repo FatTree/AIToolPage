@@ -1,0 +1,1 @@
+import{_ as e,o as s,c as t,a as _}from"./index-6f71b194.js";const c={},o={class:"about"},n=_("h1",null,"This is PRICING page",-1),a=[n];function i(r,d){return s(),t("div",o,a)}const u=e(c,[["render",i]]);export{u as default};
