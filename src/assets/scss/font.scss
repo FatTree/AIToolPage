@@ -1,0 +1,120 @@
+$Reg-FW: 400;
+$Blob-FW: 900;
+
+@mixin TC-Font($sz: 1.25rem, $lh: 1.2, $clr: $Black100) {
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: $sz;
+    line-height: $lh;
+    // color: $clr;
+  }
+
+  @mixin TC-Font2($fw: $Blob-FW, $sz: 1.25rem, $lh: 1.2, $clr: $Black100) {
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: $fw;
+    font-size: $sz;
+    line-height: $lh;
+    color: $clr;
+  }
+  
+  
+@mixin TC-Display02-Blob {
+    @include TC-Font2(900, 4, 2, $Black);
+}
+
+@mixin TC-Heading06-Blob {
+    @include TC-Font2();
+}
+
+@mixin TC-Small-Regular {
+    @include TC-Font2(400, 0.875rem, 1.5, $Black80);
+}
+
+@mixin TC-Body-Blod {
+    @include TC-Font2(700, 1rem, 1.5);
+}
+
+@mixin TC-Body-Regular {
+    @include TC-Font(400, 1rem, 1.5);
+}
+
+@mixin icon24 {
+    color: $Black100;
+    font-size: 24px;
+}
+
+
+.TC-Display01 {
+    @include TC-Font(160px, 1.2, $Black);
+}
+
+.TC-Display02 {
+    @include TC-Font(120px, 1.2, $Black);
+}
+
+.TC-Display03 {
+    @include TC-Font(80px, 1.2, $Black);
+}
+
+.TC-Heading01 {
+    @include TC-Font(48px, 1.2, $Black);
+}
+
+.TC-Heading02 {
+    @include TC-Font(40px, 1.2, $Black);
+}
+
+.TC-Heading03 {
+    @include TC-Font(32px, 1.2, $Black);
+}
+
+.TC-Heading04 {
+    @include TC-Font(28px, 1.2, $Black);
+}
+
+.TC-Heading05 {
+    @include TC-Font(24px, 1.2, $Black);
+}
+
+.TC-Heading06 {
+    @include TC-Font(20px, 1.2, $Black);
+}
+
+.TC-Body {
+    @include TC-Font(16px, 1.5, $Black);
+}
+
+.TC-Small {
+    @include TC-Font(14px, 1.5, $Black);
+}
+
+.TC-Tiny {
+    @include TC-Font(12px, 1.5, $Black);
+}
+
+.TC-Regular {
+    font-weight: $Reg-FW;
+}
+
+.TC-Blob {
+    font-weight: $Blob-FW;
+}
+
+@media screen and (max-width: 767px) {
+	.TC-Display02 {
+        @include TC-Font(48px, 1.2, $Black);
+    }
+
+    .TC-Display03 {
+        @include TC-Font(80px, 1.2, $Black);
+    }
+
+    .TC-Heading01 {
+        @include TC-Font(32px, 1.2, $Black);
+    }
+
+    .TC-Heading03 {
+        @include TC-Font(20px, 1.2, $Black);
+    }
+}
+
+

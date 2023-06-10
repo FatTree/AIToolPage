@@ -1,0 +1,24 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+// variables
+@import "./scss/variables.scss";
+
+// font
+@import "./scss/font.scss";
+
+// btn
+.TC-Btn {
+  display:inline-block;
+  border-radius: 16px;
+  padding: 20px 40px;
+}
+
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  text-decoration: None;
+  list-style: none;
+}
+
+.d-flex {
+  display: flex;
+}
