@@ -31,7 +31,7 @@ import Header from './components/Header.vue'
 @import './assets/main.module.scss';
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 .container {
-  // background-color: $Black100;
+  margin: 0 12px;
   color: $Black0;
   // min-width: 1180px;
 }
@@ -66,9 +66,6 @@ import Header from './components/Header.vue'
 }
 
 @media screen and (max-width: 767px) {
-  .container {
-    margin: 0 12px
-  }
 	.nav {
     &__logos {
     > .logo {

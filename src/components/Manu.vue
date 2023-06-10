@@ -180,6 +180,9 @@ const cardArr = [
     border-radius: 16px;
     cursor: pointer;
     padding: 20px 40px;
+    white-space: nowrap;
+
+    
 
     .material-icons {
       font-size: 17px;
@@ -191,6 +194,10 @@ const cardArr = [
     display: flex;
     width: 100%;
     overflow: hidden;
+    
+    &::-webkit-scrollbar {
+      display: none;
+    }
     .filterBtn {
       @include TC-Font(16px, 1.5, $Black);
       font-weight: $Reg-FW;
@@ -200,6 +207,7 @@ const cardArr = [
       color: $Black60;
       cursor: pointer;
       margin-right: 10px;
+      white-space: nowrap;
 
       &--selected, &:hover {
         @include filterHover;

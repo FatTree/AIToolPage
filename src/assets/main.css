@@ -55,7 +55,7 @@ table {
 
 .MaxW {
 	max-width: 1296px;
-	min-width: 1000px;
+	/* min-width: 1000px; */
 	margin: 0 auto;
 }
 
@@ -63,7 +63,7 @@ table {
 @media screen and (max-width: 767px) {
 	.MaxW {
 		max-width: 100%;
-		min-width: 100%;
+		/* min-width: 100%; */
 		margin: 0 auto;
 		padding: 12px;
 	}
